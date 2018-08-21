@@ -18,8 +18,20 @@ public Stack(int size) {
 	this.size = size;
 	stack = new int[this.size];
 }
-
-
-
-
+public boolean push(int number){
+	if(!isFull()==true){
+	top++;
+	stack[top]=number;
+	return true;
+	}
+	else {
+		return false;
+	}
 }
+public boolean isFull(){
+	return (top==stack.length-1);
+	
+	
+}
+}
+
