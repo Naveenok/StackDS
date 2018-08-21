@@ -37,8 +37,8 @@ public class Stack {
 
 	public int pop() {
 
-		top--;
-		return stack[top];
+		
+		return stack[top--];
 
 	}
 
